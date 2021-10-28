@@ -40,7 +40,6 @@ body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
   background-color: #ffffff;
-  max-width: 1600px;
 }
 
 .link {
@@ -73,7 +72,6 @@ body {
 /*----Header-----*/
 
 .header {
-  max-width: 1600px;
   margin: 0 auto;
   border-bottom: 1px solid #ececec;
 }
@@ -328,7 +326,6 @@ body {
   background-color: #f5f4fa;
   padding-bottom: 94px;
   padding-top: 94px;
-  max-width: 1600px;
 }
 
 .team-list {
@@ -461,7 +458,6 @@ address {
   padding-bottom: 60px;
   display: flex;
   margin: 0 auto;
-  max-width: 1600px;
 }
 .footer-conteiner {
   display: flex;
@@ -598,12 +594,6 @@ address {
   border: 1px solid #eeeeee;
 }
 
-.projects-link:hover .is-hidden-fon {
-  /* opacity: 1; */
-  transform: translateY(-100%);
-  transition: transform 250ms;
-}
-
 .projects-title {
   font-weight: 700;
   font-size: 18px;
@@ -618,6 +608,10 @@ address {
   line-height: 1.87;
   color: var(--primary-text-color);
 }
+.projects-link:hover .projects-fon {
+  transform: translateY(0%);
+  /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
 
 .project-box {
   position: relative;
@@ -626,19 +620,17 @@ address {
 
 .projects-fon {
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
 
   display: flex;
+  height: 100%;
+  width: 100%;
   align-items: center;
-  justify-content: center;
-  width: 370px;
-  height: 294px;
 
   background-color: rgba(33, 150, 243, 0.9);
-
-  /* opacity: 0; */
-  /* transition: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-fon-text {
