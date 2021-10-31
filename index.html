@@ -404,6 +404,14 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="footer-form">
+                    <form>
+                        <h2 class="our-links-text">Подпишитесь на рассылку</h2>
+                        <input class="footer-form-input" type="email" name="email" />
+                    </form>
+
+                </div>
             </div>
         </div>
         
@@ -412,6 +420,23 @@
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <form action="">
+                <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                <label for="user-name" class="input-name">Имя</label>
+                <input type="text" id="user-name" name="user-name" required class="form-input">
+
+                <label for="user-tel" class="input-name">Телефон</label>
+                <input type="tel" id="user-tel" name="user-tel" class="form-input">
+                
+                <label for="user-mail" class="input-name">Почта</label>
+                <input type="email" id="user-mail" name="user-mail" class="form-input">
+
+                <label for="text" class="input-name">Комментарий</label>
+                <textarea name="text" id="text" cols="30" rows="10" 
+                placeholder="Введите текст" class="form-text"></textarea>
+                
+                <button type="submit" class="btn">Отправить</button>
+            </form>
             <button class="modal-btn" data-modal-close>
                 <svg class="modal-icon-close">
                     <use href="./image/symbol-defs.svg#icon-close-black"></use>
