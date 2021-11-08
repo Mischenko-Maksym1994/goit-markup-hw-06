@@ -41,7 +41,10 @@ body {
   letter-spacing: 0.03em;
   background-color: #ffffff;
 }
-
+input {
+  padding: 0px;
+  margin: 0px;
+}
 .link {
   text-decoration: none;
 }
@@ -727,7 +730,6 @@ address {
 }
 
 .input-name {
-  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
   color: var(--primary-text-color);
@@ -737,10 +739,20 @@ address {
   width: 100%;
   height: 40px;
   margin-bottom: 10px;
+  margin-top: 4px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
+.form-input:hover,
+.form-input:focus {
+  border: 1px solid rgba(33, 150, 243, 1);
+  border-color: var(--acsent-color);
+}
+textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .form-text {
   width: 100%;
   height: 120px;
@@ -749,4 +761,29 @@ address {
   padding-top: 12px;
   padding-bottom: 12px;
   resize: none;
+  margin-top: 4px;
+  margin-bottom: 20px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.box-btn-form {
+  display: flex;
+}
+
+.checkbox-conteiner {
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin: 0 auto;
+}
+
+.deal-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-text-color);
+}
+
+.link-contract {
+  color: var(--acsent-color);
+  text-decoration: underline;
 }

@@ -422,9 +422,10 @@
         <div class="modal">
             <form action="">
                 <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                
                 <label for="user-name" class="input-name">Имя</label>
                 <input type="text" id="user-name" name="user-name" required class="form-input">
-
+                
                 <label for="user-tel" class="input-name">Телефон</label>
                 <input type="tel" id="user-tel" name="user-tel" class="form-input">
                 
@@ -434,8 +435,17 @@
                 <label for="text" class="input-name">Комментарий</label>
                 <textarea name="text" id="text" cols="30" rows="10" 
                 placeholder="Введите текст" class="form-text"></textarea>
+
+                <div class="box-btn-form">
+                <div class="checkbox-conteiner">
+                    <input type="checkbox" name="terms-of-use">
+                    <label for="terms-of-use" class="deal-text">Соглашаюсь с рассылкой и принимаю 
+                    <span><a href="" class="link-contract">Условия договора</a></span>
+                    </label>
+                </div>
                 
                 <button type="submit" class="btn">Отправить</button>
+                </div>
             </form>
             <button class="modal-btn" data-modal-close>
                 <svg class="modal-icon-close">
