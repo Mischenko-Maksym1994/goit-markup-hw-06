@@ -724,8 +724,12 @@ address {
   height: 18px;
   fill: black;
 }
-.modal-btn:hover {
+/* .modal-btn:hover {
   border: 1px solid rgba(0, 0, 0, 0.7);
+} */
+
+.modal-icon-close:hover {
+  fill: var(--acsent-color);
 }
 
 .form-title {
