@@ -467,20 +467,17 @@ address {
 .foot {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  margin: 0 auto;
 }
+
 .footer-conteiner {
   display: flex;
 }
+
 .footer-nav {
   display: flex;
   flex-direction: column;
 }
 
-.footer-adress {
-  margin-right: 70px;
-}
 .logo-footer {
   display: block;
   margin-bottom: 20px;
@@ -537,11 +534,7 @@ address {
 }
 .footer-form {
   padding-top: 12px;
-  width: 350px;
-  display: flex;
-  justify-content: start;
-  /* flex-direction: column; */
-
+  width: 358px;
   margin-left: 93px;
 }
 
@@ -550,6 +543,20 @@ address {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  padding: 16px 15px;
+  background-color: rgba(47, 48, 58, 1);
+}
+
+.footer-form-btn {
+  display: flex;
+  margin-left: auto;
+  height: 86px;
+}
+
+.btn-footer {
+  border: 0px;
+  align-items: center;
+  margin-left: 12px;
 }
 /*----Portfolio-----*/
 
