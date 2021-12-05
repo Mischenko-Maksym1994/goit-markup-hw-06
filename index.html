@@ -408,17 +408,15 @@
                 </div>
 
                 <div class="footer-form-btn">
-                <div class="footer-form">
-                    <form action=""></form>    
-                    <h2 class="our-links-text">Подпишитесь на рассылку</h2>
-                        <label>
+               
+                    <form action="" class="footer-form">   
+                        <label class="our-links-text">Подпишитесь на рассылку
                         <input class="footer-form-input" 
                         type="email" name="email" 
                         placeholder="E-mail" />
-                        </label>   
-                </div>
-                
-                    <button type="submit" class="btn btn-footer">Подписаться</button>
+                        </label>         
+                        <button type="submit" class="btn btn-footer">Подписаться</button>
+                    </form>
                 </div>
         </div>
         
@@ -430,14 +428,39 @@
             <form action="">
                 <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
                 
+                <div class="input-image">
                 <label for="user-name" class="input-name">Имя</label>
-                <input type="text" id="user-name" name="user-name" required class="form-input">
+                    <div class="input-position-name">
+                <input type="text" id="user-name" name="user-name" required 
+                class="form-input">
+                <svg class="input-icon-name">
+                    <use href="./image/symbol-defs.svg#icon-person-black"></use>
+                </svg>
+                    </div>
+                </div>
+
+                <div class="input-image">
+                    <label for="user-tel" class="input-name">Телефон</label>
+                        <div class="input-position-tel">
+                    <input type="tel" id="user-tel" name="user-tel" 
+                    class="form-input">
+                    <svg class="input-icon-name">
+                        <use href="./image/symbol-defs.svg#icon-phone-black"></use>
+                    </svg>
+                        </div>
+                </div>
                 
-                <label for="user-tel" class="input-name">Телефон</label>
-                <input type="tel" id="user-tel" name="user-tel" class="form-input">
                 
+                <div class="input-image">
                 <label for="user-mail" class="input-name">Почта</label>
-                <input type="email" id="user-mail" name="user-mail" class="form-input">
+                    <div class="input-position-email">
+                <input type="email" id="user-mail" 
+                        name="user-mail" class="form-input">
+                        <svg class="input-icon-name">
+                            <use href="./image/symbol-defs.svg#icon-email-black"></use>
+                        </svg>
+                    </div>
+                </div>
 
                 <label for="text" class="input-name">Комментарий</label>
                 <textarea name="text" id="text" cols="30" rows="10" 
@@ -454,12 +477,13 @@
                 <button type="submit" class="btn checkbox-btn">Отправить</button>
                 </div>
 
+                <button class="modal-btn" data-modal-close>
+                    <svg class="modal-icon-close">
+                        <use href="./image/symbol-defs.svg#icon-close-black"></use>
+                    </svg>
+                </button>
             </form>
-            <button class="modal-btn" data-modal-close>
-                <svg class="modal-icon-close">
-                    <use href="./image/symbol-defs.svg#icon-close-black"></use>
-                </svg>
-            </button>
+            
         </div>
     </div>
 
