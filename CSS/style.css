@@ -240,7 +240,8 @@ input {
   border: none;
 }
 
-.hero-btn:hover {
+.hero-btn:hover,
+.btn:hover {
   background: #188ce8;
 }
 
@@ -551,10 +552,25 @@ address {
   width: 570px;
 }
 
-.btn-footer {
+.footer-btn-tumb {
+  position: relative;
+
   border: 0px;
   margin-left: 12px;
-  margin-top: 35px;
+  height: 50px;
+  padding-top: 35px;
+}
+
+.btn-footer {
+  position: relative;
+  border: none;
+}
+
+.footer-btn-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: #ffffff;
 }
 /*----Portfolio-----*/
 
@@ -698,7 +714,7 @@ address {
   left: 50%;
 
   width: 528px;
-  height: 581px;
+  box-sizing: border-box;
   padding: 40px;
   border-radius: 4px;
   background: #ffffff;
@@ -723,6 +739,8 @@ address {
   border-radius: 50%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-icon-close {
   width: 18px;
@@ -751,6 +769,7 @@ address {
   fill: black;
 
   transform: translateY(-50%);
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-position-tel {
   position: relative;
@@ -763,6 +782,7 @@ address {
 
 .modal-icon-close:hover {
   fill: var(--acsent-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-title {
@@ -788,13 +808,10 @@ address {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.form-input:hover,
-.form-input:focus,
-.form-input:active {
-  /* border: 1px solid rgba(33, 150, 243, 1); */
+
+.form-input:focus {
   border-color: var(--acsent-color);
-  /* fill: var(--acsent-color); */
-  /* outline: var(--acsent-color); */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:hover + .input-icon-name,
 .form-input:focus + .input-icon-name {
