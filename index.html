@@ -476,14 +476,33 @@
                 placeholder="Введите текст" class="form-text"></textarea>
 
                 <div class="box-btn-form">
-                    
-                    <label class="checkbox-conteiner">
-                        <input class="checkbox" type="checkbox" name="terms-of-use">
-                        <span class="checkbox-icon"></span>
-                        <span class="deal-text">Соглашаюсь с рассылкой и принимаю</span>
-                        <span><a href="" class="link-contract">Условия договора</a>
+                    <input class="checkbox" 
+                        type="checkbox" 
+                        name="terms-of-use"
+                        id="check-icon">
+
+                    <label class="check-icon-text" for="check-icon">
+                        <span class="checkbox-icon">
+                            <svg class="check-icon" width="16" height="15">
+                                <use href="./image/symbol-defs.svg#icon-icon-check"></use>
+                            </svg>
                         </span>
+                        Соглашаюсь с рассылкой и принимаю
+                        <a href="" class="link-contract">Условия договора</a>
+                        
                     </label>
+                    <!-- альтернативный чекбокс-->
+                    <!-- <div>
+                    <input type="checkbox"
+                        name="alt-checkbox"
+                        id="modal-check"
+                        class="modal-check checkbox">
+
+                    <label for="modal-check" class="modal-check-text">
+                        Aльтернативный чекбокс
+                    </label>
+                    </div> -->
+                    <!-- альтернативный чекбокс-->
                 
                 <button type="submit" class="btn checkbox-btn">Отправить</button>
                 </div>
